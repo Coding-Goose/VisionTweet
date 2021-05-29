@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
 </head>
@@ -16,58 +17,58 @@
 <section>
 
     <div class="new-tweet-container">
-        <button id="btn-new-tweet">POST</button>
-        <textarea cols="77" rows="3" placeholder="Come and post something!"></textarea>
+        <button id="btn-new-tweet" onclick="addTweet()">POST</button>
+        <textarea id="message-box" cols="77" rows="3" placeholder="Come and post something!"></textarea>
     </div>
 
-    <ul>
-        <div class="tweet">
-            <img src="https://picsum.photos/100?random=1" alt="no pic found" class="avatar">
-            <div class="middle-container">
-                <span class="username">Super User 123</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, dolores.</p>
-            </div>
-            <button class="x-button">X</button>
-        </div>
+    <ul id="tweet-list">
+<!--        <div class="tweet">-->
+<!--            <img src="https://picsum.photos/100?random=1" alt="no pic found" class="avatar">-->
+<!--            <div class="middle-container">-->
+<!--                <span class="username">Super User 123</span>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, dolores.</p>-->
+<!--            </div>-->
+<!--            <button class="x-button">X</button>-->
+<!--        </div>-->
 
-        <div class="tweet">
-            <img src="https://picsum.photos/100?random=2" alt="no pic found" class="avatar">
-            <div class="middle-container">
-                <span class="username">Super User 123</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus sunt odio error, ab itaque
-                    excepturi hic. Laudantium, obcaecati facere!</p>
-            </div>
-            <button class="x-button">X</button>
-        </div>
+<!--        <div class="tweet">-->
+<!--            <img src="https://picsum.photos/100?random=2" alt="no pic found" class="avatar">-->
+<!--            <div class="middle-container">-->
+<!--                <span class="username">Super User 123</span>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus sunt odio error, ab itaque-->
+<!--                    excepturi hic. Laudantium, obcaecati facere!</p>-->
+<!--            </div>-->
+<!--            <button class="x-button">X</button>-->
+<!--        </div>-->
 
-        <div class="tweet">
-            <img src="https://picsum.photos/100?random=3" alt="no pic found" class="avatar">
-            <div class="middle-container">
-                <span class="username">Super User 123</span>
-                <p>Lorem, ipsum dolor.</p>
-            </div>
-            <button class="x-button">X</button>
-        </div>
+<!--        <div class="tweet">-->
+<!--            <img src="https://picsum.photos/100?random=3" alt="no pic found" class="avatar">-->
+<!--            <div class="middle-container">-->
+<!--                <span class="username">Super User 123</span>-->
+<!--                <p>Lorem, ipsum dolor.</p>-->
+<!--            </div>-->
+<!--            <button class="x-button">X</button>-->
+<!--        </div>-->
 
-        <div class="tweet">
-            <img src="https://picsum.photos/100?random=4" alt="no pic found" class="avatar">
-            <div class="middle-container">
-                <span class="username">Super User 123</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <button class="x-button">X</button>
-        </div>
+<!--        <div class="tweet">-->
+<!--            <img src="https://picsum.photos/100?random=4" alt="no pic found" class="avatar">-->
+<!--            <div class="middle-container">-->
+<!--                <span class="username">Super User 123</span>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>-->
+<!--            </div>-->
+<!--            <button class="x-button">X</button>-->
+<!--        </div>-->
 
-        <div class="tweet">
-            <img src="https://picsum.photos/100?random=5" alt="no pic found" class="avatar">
-            <div class="middle-container">
-                <span class="username">Super User 123</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis dolore ad deserunt, laudantium
-                    alias cumque quaerat accusantium, dolores distinctio necessitatibus delectus ipsum saepe natus
-                    facere, quasi reprehenderit ab commodi!</p>
-            </div>
-            <button class="x-button">X</button>
-        </div>
+<!--        <div class="tweet">-->
+<!--            <img src="https://picsum.photos/100?random=5" alt="no pic found" class="avatar">-->
+<!--            <div class="middle-container">-->
+<!--                <span class="username">Super User 123</span>-->
+<!--                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis dolore ad deserunt, laudantium-->
+<!--                    alias cumque quaerat accusantium, dolores distinctio necessitatibus delectus ipsum saepe natus-->
+<!--                    facere, quasi reprehenderit ab commodi!</p>-->
+<!--            </div>-->
+<!--            <button class="x-button">X</button>-->
+<!--        </div>-->
 
     </ul>
 
