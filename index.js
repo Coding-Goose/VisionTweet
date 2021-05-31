@@ -1,5 +1,3 @@
-console.log("hello");
-
 const tweets = [
     {
         user: "Super User 1",
