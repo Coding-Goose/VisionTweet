@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap" rel="stylesheet">
 </head>
@@ -18,15 +19,15 @@
         <h1>Login</h1>
         <form class="login-form">
             <label for="login-mail">E-Mail</label>
-            <input id="login-mail" type="email" placeholder="E-Mail">
+            <input id="login-mail" type="email" placeholder="E-Mail" oninput="triggerDisabledState()">
             <label for="login-password">Passwort</label>
-            <input id="login-password" type="password" placeholder="Passwort">
+            <input id="login-password" type="password" placeholder="Passwort" oninput="triggerDisabledState()">
             <div>
-                <input id="dsgvo-checkbox" type="checkbox" style="height: 1.5rem; width: 1.5rem">
+                <input id="dsgvo-checkbox" type="checkbox" style="height: 1.5rem; width: 1.5rem" oninput="triggerDisabledState()">
                 <label for="dsgvo-checkbox" style="color: cornflowerblue;">Ich habe die nicht vorhandene DSGVO gelesen und verkaufe meine
                     Selee.</label>
             </div>
-            <button id="login-button">Login</button>
+            <button id="login-button" onclick="login()" disabled>Login</button>
         </form>
     </div>
 </div>

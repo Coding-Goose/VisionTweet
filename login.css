@@ -115,6 +115,12 @@
     height: 5rem;
 }
 
+#login-button:disabled {
+    background: gray;
+    color: lightgrey;
+    cursor: not-allowed;
+}
+
 @keyframes slide-in {
     0%   {right: -1000px;}
     100% {right: 0;}
